@@ -1,11 +1,11 @@
-import logo from './logo.svg';
+import { Component } from 'react';
 import './App.css';
 
 const Header = () => {
   return <h2>Hello world!</h2>
 }
 
-const Field = () => {
+/* const Field = () => {
   const holder = "Type here";
   const styledFiled = {
     width: '300px',
@@ -16,6 +16,21 @@ const Field = () => {
     placeholder={holder}
     style = {styledFiled}
     />
+} */
+
+class Field extends Component {
+  render () {
+    const holder = "Type here";
+    const styledFiled = {
+      width: '300px',
+      backgroundColor: '#32ef8f'
+  }
+   return <input 
+   type="text"
+   placeholder={holder}
+   style = {styledFiled}
+   />
+}
 }
 
 function Btn () {
@@ -33,4 +48,5 @@ function App() {
   );
 }
 
+export {Header};
 export default App;
