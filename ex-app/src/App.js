@@ -10,12 +10,13 @@ const Field = () => {
 }
 
 function Btn () {
-  //const text = "Log in"
+  const text = "Log in"
   /*const res = () => {
     return "Log in"
   }*/
-  const p = <p>Log in</p>
-  return <button>{p}</button>
+  //const p = <p>Log in</p>
+  const logged = true;
+  return <button>{logged ? 'Enter' : text}</button>
 }
 function App() {
   return (
