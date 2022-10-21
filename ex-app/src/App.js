@@ -6,15 +6,20 @@ const Header = () => {
 }
 
 const Field = () => {
-  return <input type="text" placeholder="Type here" />
+  const holder = "Type here";
+  const styledFiled = {
+    width: '300px',
+    backgroundColor: '#32ef8f'
+  }
+  return <input 
+    type="text"
+    placeholder={holder}
+    style = {styledFiled}
+    />
 }
 
 function Btn () {
   const text = "Log in"
-  /*const res = () => {
-    return "Log in"
-  }*/
-  //const p = <p>Log in</p>
   const logged = true;
   return <button>{logged ? 'Enter' : text}</button>
 }
