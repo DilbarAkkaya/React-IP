@@ -10,7 +10,8 @@ const Field = () => {
 }
 
 function Btn () {
-  return <button>Click me!</button>
+  const text = "Log in"
+  return <button>{text}</button>
 }
 function App() {
   return (
