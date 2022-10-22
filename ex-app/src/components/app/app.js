@@ -2,6 +2,7 @@ import AppInfo from '../app-info/app-info';
 import SearchPanel from '../search-panel/search-panel';
 import AppFilter from '../app-filter/app-filter';
 import EmployeeList from '../employee-list/emploee-list';
+import EmployeeAddForm from '../employee-add-form/employee-add-form';
 import './app.css';
 
 function App () {
@@ -13,6 +14,7 @@ function App () {
         <AppFilter />
       </div>
       <EmployeeList/>
+      <EmployeeAddForm/>
     </div>
   )
 }
